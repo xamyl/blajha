@@ -10,8 +10,10 @@ jobs:
     runs-on: ubuntu-latest
     environment:
       name: deploy
-      secrets:
-        GHCR_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+    secrets:
+      DEPLOY_TOKEN: ${{ secrets.DEPLOY_TOKEN }}
+      GHCR_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
     steps:
       -
